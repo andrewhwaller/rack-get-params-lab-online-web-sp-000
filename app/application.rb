@@ -16,6 +16,7 @@ class Application
     elsif req.path.match(/cart/)
       @@cart.each do |cart_item|
         resp.write "#{cart_item}\n"
+      end
     elsif req.path.match(/add/)
       add_item = req.params["item"]
       if @@cart.!include?(add_item)
