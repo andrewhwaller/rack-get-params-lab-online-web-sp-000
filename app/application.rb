@@ -23,6 +23,7 @@ class Application
         @@cart << add_item
       else
         resp.write "Item Not Found"
+      end
     else
       resp.write "Path Not Found"
     end
